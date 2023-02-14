@@ -1,0 +1,19 @@
+@import "./components/Public.css";
+
+body {
+  min-width: 320px;
+  background-color: var(--surface-color) !important;
+}
+
+.body {
+  overflow-y: scroll;
+
+  min-width: 320px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--background-color) !important;
+  /*background-image: var(--wallpaper-color) !important*/;
+
+  transition: all 0.5s ease;
+}

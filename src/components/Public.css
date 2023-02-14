@@ -1,0 +1,290 @@
+:root {
+  --wallpaper-color: linear-gradient(
+    180deg,
+    rgba(206, 208, 238, 0.16) 0%,
+    rgba(209, 200, 236, 0) 64%
+  );
+  /*--background-color: #f6f8fb;*/
+  --background-color: #f8f9fa;
+  --surface-color: #ffffff;
+  --icon-background-color: #f6f8fb;
+  --icon-color: #000000;
+  --font-primary-color: #000000;
+  --font-secondary-color: #7d7d7d;
+  --font-tag-color: #6367b9;
+  --line-color: 1px solid #eeeeee;
+  --custom-transparent-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #ffffff 100%
+  );
+}
+
+[data-theme="dark"] {
+  --wallpaper-color: linear-gradient(
+    180deg,
+    rgba(206, 208, 238, 0.16) 0%,
+    rgba(209, 200, 236, 0) 64%
+  );
+  --background-color: #24242c;
+  --surface-color: #2c2c36;
+  --icon-background-color: #444654;
+  --icon-color: #ffffff;
+  --font-primary-color: #ffffff;
+  --font-secondary-color: #acacac;
+  --font-tag-color: #c2c4f8;
+  --line-color: 1px solid #474747;
+  --custom-transparent-color: linear-gradient(
+    180deg,
+    rgba(44, 44, 54, 0.5) 0%,
+    #2c2c36 100%
+  );
+}
+
+@media (max-width: 360px) {
+  .font-header {
+    font-size: 20px !important;
+  }
+
+  .font-subheader {
+    font-size: 18px !important;
+  }
+
+  .font-body {
+    font-size: 12px !important;
+  }
+
+  .font-bodybold {
+    font-size: 12px !important;
+  }
+
+  .font-subbody {
+    font-size: 10px !important;
+  }
+
+  .font-subbodybold {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixed-bar {
+    margin: 12px !important;
+    border-radius: 8px !important;
+  }
+}
+
+.font-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  transition: all 0.5s ease;
+}
+
+.font-subheader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all 0.5s ease;
+}
+
+.font-body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all 0.5s ease;
+}
+
+.font-bodybold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all 0.5s ease;
+}
+
+.font-subbody {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  transition: all 0.5s ease;
+}
+
+.font-subbodybold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  transition: all 0.5s ease;
+}
+
+.font-colormain {
+  color: var(--font-primary-color);
+}
+
+.font-colorsub {
+  color: var(--font-secondary-color);
+}
+
+.font-colorselect {
+  color: var(--font-tag-color);
+}
+
+.self-card {
+  background: var(--custom-transparent-color);
+  /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);*/
+  border-radius: 16px;
+  transition: all 0.5s ease !important;
+}
+
+.self-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px;
+  gap: 32px;
+}
+
+.self-card-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.show-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.show-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.normal-card {
+  background: var(--surface-color);
+  /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);*/
+  border-radius: 16px;
+  transition: all 0.5s ease !important;
+}
+
+.normal-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  gap: 32px;
+  transition: all 0.5s ease !important;
+}
+
+.iconframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 45px;
+  height: 45px;
+
+  background: var(--icon-background-color);
+  /*color: var(--icon-color);*/
+  color: #2196f3;
+  border-radius: 45px;
+  transition: all 0.5s ease;
+}
+
+.fixed-bar {
+  background: var(--surface-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.5s ease;
+}
+
+.fixed-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  gap: 10px;
+  height: 60px;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+
+.global-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+  height: 24px;
+  width: fit-content;
+
+  background: var(--icon-background-color);
+  color: var(--font-tag-color);
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.line {
+  border: var(--line-color);
+  transition: all 0.5s ease;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 10px;
+  height: 45px;
+  cursor: pointer;
+
+  background: var(--icon-background-color);
+  color: var(--font-tag-color);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.buttonframe {
+  cursor: pointer;
+}
+
+.blockdata {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
